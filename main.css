@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700,800&display=swap);
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  /* height: 100%; */
+  line-height: 1;
+}
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+::selection {
+  background-color: rgb(255, 255, 255);
+  color: #fff;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red;
+}
+
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
+[class*='__container'] {
+  max-width: 1087px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+body {
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #23272e;
+}
+/* ------------------------------------------ */
+/* USER STYLES */
+/* .wrapper {
+  min-height: 100%;
+  width: 100%;
+} */
+.wrapper__container {
+  min-height: 100vh;
+  width: 100%;
+}
+.wrapper__container--rainbow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0px 15px 0px 15px;
+}
+.rainbow__btn {
+  display: block;
+  font-size: 25px;
+  width: 110px;
+  height: 40px;
+  border: solid 1px #868686;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 5px 20px 0px;
+  box-shadow: 0px 0px 5px #636363;
+}
+
+.rainbow__red {
+  background: red;
+}
+.rainbow__red:hover {
+  background: rgb(255, 49, 49);
+}
+.rainbow__orange {
+  background: orange;
+}
+.rainbow__orange:hover {
+  background: rgb(255, 191, 71);
+}
+.rainbow__yellow {
+  background: yellow;
+}
+.rainbow__yellow:hover {
+  background: rgb(248, 248, 132);
+}
+.rainbow__green {
+  background: green;
+}
+.rainbow__green:hover {
+  background: rgb(63, 151, 63);
+}
+.rainbow__light-blue {
+  background: #00bfff;
+}
+.rainbow__light-blue:hover {
+  background: #81e0ff;
+}
+.rainbow__blue {
+  background: blue;
+}
+.rainbow__blue:hover {
+  background: rgb(67, 67, 255);
+}
+.rainbow__violet {
+  background: purple;
+}
+.rainbow__violet:hover {
+  background: rgb(173, 78, 173);
+}
+.grass {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1634415630766-c8b381b66acc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80);
+}
+.display__viev {
+  display: none;
+}
+.givBtnRed {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+}

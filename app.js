@@ -12,11 +12,11 @@ const displayViev = document.querySelector('.display__viev')
 const givBtnRed = document.querySelector('#givBtnRed')
 
 
-rainbowBtnRed.onclick = function () {
+rainbowBtnRed.onclick = () => {
   document.body.style.background = "red"
 }
 
-rainbowBtnOrange.addEventListener('click', function() {
+rainbowBtnOrange.addEventListener('click', () => {
   const prevRainbowBtn = rainbowBtnOrange.previousElementSibling
   const nextRainbowBtn = rainbowBtnOrange.nextElementSibling
   prevRainbowBtn.style.color = "orange"
@@ -25,25 +25,26 @@ rainbowBtnOrange.addEventListener('click', function() {
   nextRainbowBtn.style.boxShadow = "0 0 100px orange, 0 0 50px orange"
 }) 
 
-rainbowBtnYellow.addEventListener('click', function() {
+rainbowBtnYellow.addEventListener('click', () => {
   const lastRainbowBtn = wrapperContainerRainbow.lastElementChild
   lastRainbowBtn.innerText = 'purple'
 }) 
 
-rainbowBtnGreen.addEventListener('click', function () {
+rainbowBtnGreen.addEventListener('click', () => {
   grass.classList.toggle('display__viev')
 })
 
-rainbowBtnLightBlue.addEventListener('click', function () {
-  lightBlue.outerHTML = '<button type="button" class="rainbow__btn rainbow__light-blue" id="rainbow__btn--light-blue">light-blue</button>   <button type="button" class="rainbow__btn rainbow__light-blue" id="rainbow__btn--light-blue">light-blue</button>'
+lightBlue.addEventListener('click', () => {
+  let clone = rainbowBtnLightBlue.cloneNode(true)
+  lightBlue.appendChild(clone, rainbowBtnBlue)
 })
 
-rainbowBtnBlue.addEventListener('click', function () {
+rainbowBtnBlue.addEventListener('click', () => {
   const firstRainbowBtn = wrapperContainerRainbow.firstElementChild
   firstRainbowBtn.classList.add('display__viev')
 })
 
-rainbowBtnViolet.addEventListener('click', function () {
+rainbowBtnViolet.addEventListener('click', () => {
   if (rainbowBtnRed.classList.contains('display__viev')) {
     rainbowBtnRed.classList.toggle('display__viev')
   }
